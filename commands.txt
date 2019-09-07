@@ -1,0 +1,33 @@
+COMMANDS
+
+Git
+git clone
+git remote add origin https://github.com/Leuteria/.git
+ng add angular-cli-ghpages
+ng deploy
+ngh -no-silent
+
+NPM
+npm install -g @angular/cli
+ng new <project>
+ng serve
+
+ANGULAR
+bootstrap
+	"node_modules/bootstrap/dist/css/bootstrap.min.css"
+	"node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+fa
+	$ npm install @fortawesome/fontawesome-svg-core
+$ npm install @fortawesome/free-solid-svg-icons
+# See Compatibility table below to choose correct version
+$ npm install @fortawesome/angular-fontawesome@<version>
+s
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+FontAwesomeModule
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+export class AppComponent {
+  faCoffee = faCoffee;
+}
+<fa-icon [icon]="faCoffee"></fa-icon>
